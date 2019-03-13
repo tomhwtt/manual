@@ -36,5 +36,4 @@ class NewModel(models.Model):
     field_one = models.CharField(max_length=50)
     field_two = models.CharField(max_length=150)
     date = models.DateTimeField(auto_now=True)
-    
-# creating a comment from GitHub
+    is_new = models.BooleanField(default=False)
